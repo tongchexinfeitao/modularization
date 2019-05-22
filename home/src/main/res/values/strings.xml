@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">home</string>
+    <string name="home_app_name">home</string>
+    <string name="home_main">HomeActivity</string>
 </resources>
