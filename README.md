@@ -1,6 +1,11 @@
 # modularization
 组件化、Arouter
 
+参考链接
+http://note.youdao.com/noteshare?id=d9ead681e31d4a8011de28cf57f5ccc1&sub=09BF7BAC164040FABA955C3B2ACAC02D
+
+
+
 1、统一配置依赖 config.gradle ，并在根项目的build.gradle里面应用改配置
   apply from:'config.gradle'
 在config中统一配置版本号，并且配置isModule变量的boolean值
@@ -14,6 +19,7 @@
 主工程app依赖所有的业务模块module
 
 4、业务module配置独立运行的代码路径
+    在main下新建debug文件夹，debug下是java、res、manifest文件
 
 5、业务module的build.gradle中需要配置的信息（红色部分）
 if (isModule) {
